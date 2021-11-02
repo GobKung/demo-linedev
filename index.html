@@ -71,6 +71,15 @@
         async function scanCode(){
             const result = await liff.scanCodeV2()
             document.getElementById("scanCode").append(result.value)
+            // ส่ง Code ที่ได้เข้าห้อง Chat
+            if (liff.getContext().type !== "none") {
+                await liff.sendMessages([
+                    {
+                        "type":"text",
+                        "text": "Code: "+result
+                    },
+                ])
+            }
         }
 
         async function main(){
