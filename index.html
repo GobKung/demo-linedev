@@ -66,6 +66,8 @@
                     }
                 ])
                 alert("Message sent")
+                // ปิดหน้าจอ
+                liff.closeWindow()
             }
         }
         // สร้างฟังก์ชัน ScanCode
@@ -96,6 +98,7 @@
             liff.openWindow({
                 url:"https://www.hunsa.com/",
                 external: false //เปิดไปที่เว็บภายนอก
+                liff.closeWindow()
             })
         }
 
