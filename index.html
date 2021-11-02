@@ -81,12 +81,21 @@
                     },
                 ])
             }
+            // เปิดไปหน้าเว็บตามลิ้งค์
+            liff.openWindow({
+                url: result.value,
+                external: false //เปิดไปที่เว็บภายนอก
+            })
         }
+
+
+
+
         // ฟังก์ชัน OpenWindow()
         function openWindow(){
             liff.openWindow({
-                url:"https://line.me"
-                external: true //เปิดไปที่เว็บภายนอก
+                url:"https://line.me",
+                external: false //เปิดไปที่เว็บภายนอก
             })
         }
 
