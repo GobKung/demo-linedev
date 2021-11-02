@@ -34,7 +34,7 @@
         // ฟังก์ชันส่งข้อความเข้าไปในห้องแชท
         async function sendMsg(){
             // เช็คว่าเปิด LIFF ใน Line App หรือไม่
-            if(leff.getContext().type !== "none"){
+            if(liff.getContext().type !== "none"){
                 await liff.sendMassages([
                     // ส่ง Sticker
                     {
